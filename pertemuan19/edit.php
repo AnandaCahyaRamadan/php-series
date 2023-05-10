@@ -54,6 +54,9 @@
 // Ambil data ID dari URL
 $id = $_GET["id"];
 
+// Mengambil data role dari tabel role
+$sqlRole = "SELECT * FROM role";
+$resultRole = $conn->query($sqlRole);
 // Query untuk membaca data berdasarkan ID
 $sql = "SELECT * FROM users WHERE id='$id'";
 $result = $conn->query($sql);
@@ -94,10 +97,19 @@ $conn->close();
         </div>
         <div class="mb-3 row">
             <div class="col-md-6">
-                <div class="mb-3">
-                <label for="role" class="form-label">Role</label>
-                <input type="text" class="form-control" id="role" name="role" placeholder="role" required value="<?= $role ?>">
-            </div>
+            <div class="mb-3">
+                        <label for="role" class="form-label">Role</label>
+                        <select class="form-select" id="role" name="role" required>
+                            <option value="">Pilih Role</option>
+                            <?php
+                            while ($rowRole = $resultRole->fetch_assoc()) {
+                                $role_id = $rowRole["id"];
+                                $role_name = $rowRole["role_name"];
+                                echo "<option value=\"$role_id\">$role_name</option>";
+                            }
+                            ?>
+                        </select>
+                    </div>
             </div>
             <div class="col-md-6">
             <div class="mb-3">
