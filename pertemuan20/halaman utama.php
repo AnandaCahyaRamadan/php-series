@@ -44,10 +44,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="create.php" style="color:white">Tambah</a>
+                    <form action="create.php">
+                    <button type="submit" class="btn btn-outline-warning" >Tambah</button>
+                    </form>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" href="logout.php" style="color:white">Logout</a>
+                    <form action="logout.php">
+                    <button type="submit" class="btn btn-outline-danger ms-2" >Logout</button>
+                    </form>
                     </li>
                 </ul>
                 </div>

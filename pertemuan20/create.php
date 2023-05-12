@@ -103,7 +103,7 @@ $conn->close();
                 <label for="avatar" class="form-label" style='color:white'>Unggah Foto</label>
                 <input type="file" class="form-control" id="avatar" name="avatar">
             </div>
-            <button type="submit" class="btn btn-warning">Tambah</button>
+            <button type="submit" class="btn btn-outline-warning">Tambah</button>
         </form>
     </div>
 </body>

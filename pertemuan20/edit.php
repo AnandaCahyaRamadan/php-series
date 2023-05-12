@@ -154,7 +154,7 @@ $conn->close();
                 ?>
                 <input type="file" class="form-control" id="avatar" name="avatar" onchange="previewImage()">
         </div>
-        <button type="submit" class="btn btn-warning mb-3">Edit</button>
+        <button type="submit" class="btn btn-outline-warning mb-3">Edit</button>
     </div>
     </form>
 </body>

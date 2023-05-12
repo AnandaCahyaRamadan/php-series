@@ -45,7 +45,7 @@ $conn->close();
     <h2 class="mb-3 mt-3" style='color:white'>Detail pengguna</h2>
     <form action="edit.php" method="post" enctype="multipart/form-data">
         <?php
-            echo "<a class='btn btn-info' href='detail.php?id=" . $row["id"] . "'>Detail</a> ";
+            echo "<a class='btn btn-primary' href='detail.php?id=" . $row["id"] . "'>Detail</a> ";
             echo "<a class='btn btn-warning' href='edit.php?id=" . $row["id"] . "'>Edit</a> ";
             echo "<a class='btn btn-danger' href='delete.php?id=" . $row["id"] . "'>Hapus</a>";
         ?>
