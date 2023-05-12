@@ -15,7 +15,6 @@
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     }
     .styled-table thead tr {
-        background-color: #009879;
         color: #ffffff;
         text-align: left;
     }
@@ -25,10 +24,6 @@
      }
      .styled-table tbody tr {
         border-bottom: 1px solid #dddddd;
-    }
-
-    .styled-table tbody tr:last-of-type {
-        border-bottom: 2px solid #009879;
     }
     </style>
 </head>
@@ -59,7 +54,7 @@
             </nav>
         <table class="styled-table table">
             <thead>
-                <tr>
+                <tr class="bg-warning">
                     <th scope="col">ID</th>
                     <th scope="col">Aksi</th>
                     <th scope="col">Avatar</th>
